@@ -5,6 +5,8 @@ public class TC001 {
 
 		
 		System.out.println("TC 001");
+		System.out.println("TC 002");
+		
 	}
 
 }
