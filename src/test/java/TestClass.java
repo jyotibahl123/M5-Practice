@@ -1,6 +1,7 @@
  import org.testng.annotations.*;
 
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -12,9 +13,9 @@ public class TestClass {
 	@Test
 	public void Test1()
 	{
-		 WebDriverManager.chromedriver().setup();
+		 WebDriverManager.iedriver().setup();
 		 
-   	     WebDriver driver = new ChromeDriver();
+   	     WebDriver driver = new InternetExplorerDriver();
    	     
 		driver.get("http://localhost:8888/");
 		
