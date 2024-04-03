@@ -13,9 +13,9 @@ public class TestClass {
 	@Test
 	public void Test1()
 	{
-		 WebDriverManager.iedriver().setup();
+		 WebDriverManager.firefoxdriver().setup();
 		 
-   	     WebDriver driver = new InternetExplorerDriver();
+   	     WebDriver driver = new FirefoxDriver();
    	     
 		driver.get("http://localhost:8888/");
 		
