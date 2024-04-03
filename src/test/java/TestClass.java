@@ -1,7 +1,7 @@
  import org.testng.annotations.*;
- import org.openqa.selenium.chrome.ChromeDriver;
 
- import org.openqa.selenium.*;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.*;
  import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class TestClass {
@@ -10,9 +10,9 @@ public class TestClass {
 	@Test
 	public void Test1()
 	{
-		WebDriverManager.chromedriver().setup();
-		WebDriver  driver = new ChromeDriver();
-		
+		 WebDriverManager.firefoxdriver().setup();
+   	    WebDriver driver = new FirefoxDriver();
+   	     
 		driver.get("http://localhost:8888/");
 		
 		driver.findElement(By.name("user_name")).sendKeys("admin");
