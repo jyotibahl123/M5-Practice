@@ -2,7 +2,9 @@
 
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.*;
- import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class TestClass {
 	
@@ -10,8 +12,9 @@ public class TestClass {
 	@Test
 	public void Test1()
 	{
-		 WebDriverManager.firefoxdriver().setup();
-   	    WebDriver driver = new FirefoxDriver();
+		 WebDriverManager.chromedriver().setup();
+		 
+   	     WebDriver driver = new ChromeDriver();
    	     
 		driver.get("http://localhost:8888/");
 		
